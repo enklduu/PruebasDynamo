@@ -1,0 +1,642 @@
+{
+  "Uuid": "be9c470d-6dfa-43d0-9f9a-732a3cce558d",
+  "IsCustomNode": false,
+  "Description": null,
+  "Name": "Ejercicio_Lacing",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double",
+      "Id": "74ee4da3cc534d8599371f3fded8d77e",
+      "Inputs": [
+        {
+          "Id": "467acc1405e84a9ca2555a530ae7b80b",
+          "Name": "x",
+          "Description": "double\nValor por defecto : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "178a4ad25bef4752b14b253f74b37c73",
+          "Name": "y",
+          "Description": "double\nValor por defecto : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b521de811c7a4ac29f9fdced1c0434ec",
+          "Name": "Point",
+          "Description": "Point",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "CrossProduct",
+      "Description": "Genera un punto en el plano XY con las dos coordenadas cartesianas especificadas. El componente Z es 0.\n\nPoint.ByCoordinates (x: double = 0, y: double = 0): Point"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Circle.ByCenterPointRadius@Autodesk.DesignScript.Geometry.Point,double",
+      "Id": "3e67304470294c6285864dedc3fbed3a",
+      "Inputs": [
+        {
+          "Id": "2ba7ee8e35dd45a2beb7e2cdab3a7d98",
+          "Name": "centerPoint",
+          "Description": "Point\nValor por defecto : Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0)",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "536973e668bf4eaaac4328b64dbff51b",
+          "Name": "radius",
+          "Description": "double\nValor por defecto : 1",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "ef5b64c9949f4989bcbab25d0a841d15",
+          "Name": "Circle",
+          "Description": "Circle",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Crea un círculo con punto central y radio en el plano XY universal, con el plano Z universal como normal.\n\nCircle.ByCenterPointRadius (centerPoint: Point = Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0), radius: double = 1): Circle"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 9.0,
+      "MinimumValue": 0.0,
+      "StepValue": 0.5,
+      "InputValue": 3.0,
+      "Id": "e9104d7bb50c49fe96d5745863a73b6d",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "645da5fcbc1c47f1ad530b07d11da3c3",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Control deslizante que genera valores numéricos"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 9.0,
+      "MinimumValue": 0.0,
+      "StepValue": 0.5,
+      "InputValue": 3.0,
+      "Id": "fb8e102e7ae541c0b8c4ed679bf09bc4",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "e748a8ccf7924080be7ad8574a83e8a7",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Control deslizante que genera valores numéricos"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double",
+      "Id": "b075fff532ec41948b3bbfdae3d07b11",
+      "Inputs": [
+        {
+          "Id": "9e1a84e6e0ac430682f51f9ae96e2730",
+          "Name": "x",
+          "Description": "double\nValor por defecto : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b0fcd41c974e4c91973981673724dfca",
+          "Name": "y",
+          "Description": "double\nValor por defecto : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "fe59c2752b184339b5c75963c363f892",
+          "Name": "Point",
+          "Description": "Point",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Genera un punto en el plano XY con las dos coordenadas cartesianas especificadas. El componente Z es 0.\n\nPoint.ByCoordinates (x: double = 0, y: double = 0): Point"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Geometry.DistanceTo@Autodesk.DesignScript.Geometry.Geometry",
+      "Id": "23c6779156794c7bbff2e1b9d5d25aa1",
+      "Inputs": [
+        {
+          "Id": "7f73d681924f414e8a50bc07166effbd",
+          "Name": "geometry",
+          "Description": "Autodesk.DesignScript.Geometry.Geometry",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "154116d89bf5489bba1a392f691b439d",
+          "Name": "other",
+          "Description": "La otra Geometry.\n\nGeometry",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "899e6d068173413bbfecf1ee75c41aac",
+          "Name": "double",
+          "Description": "La distancia.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Obtiene la distancia entre esta Geometry y otra.\n\nGeometry.DistanceTo (other: Geometry): double"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "0..10..#10;",
+      "Id": "751b01e0acbe4a4a92b7b34bd884d45b",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "04439890ee7241f0a44e0ca3687172b6",
+          "Name": "",
+          "Description": "Valor de la expresión en la línea 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Permite creación directa de código de DesignScript"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "i[1]/2;",
+      "Id": "fc8c814dc2ce470c8956d951af6e6ae1",
+      "Inputs": [
+        {
+          "Id": "2b5a7ec2c54641c8b2c995a64d67ff2a",
+          "Name": "i",
+          "Description": "i",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "97a6a28b865e4f118847030f867f0498",
+          "Name": "",
+          "Description": "Valor de la expresión en la línea 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Permite creación directa de código de DesignScript"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "radio=(dist*(i/max));",
+      "Id": "9428d01f219d45c0b4980b2944212841",
+      "Inputs": [
+        {
+          "Id": "facb42b57c294f3e8841f50b42a1514a",
+          "Name": "dist",
+          "Description": "dist",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "32f014238bec4f6cb0eb72d08a47f87f",
+          "Name": "i",
+          "Description": "i",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f751fa2f61bc49448f19d96d574d2cd2",
+          "Name": "max",
+          "Description": "max",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "3615d190c42844e6b1f77d75f4f49077",
+          "Name": "",
+          "Description": "radio",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Permite creación directa de código de DesignScript"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.List.MaximumItem@var[]",
+      "Id": "cbf074015545479eb57729bef60dd254",
+      "Inputs": [
+        {
+          "Id": "af47165771e44507bae0e7c5717c0c23",
+          "Name": "list",
+          "Description": "Lista de la que se obtiene el valor máximo.\n\nvar[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "edb5653584ad4e998c6b2c519a9c78e0",
+          "Name": "max",
+          "Description": "Valor máximo de la lista.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Devuelve el valor máximo de una lista.\n\nList.MaximumItem (list: var[]): var[]..[]"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "b521de811c7a4ac29f9fdced1c0434ec",
+      "End": "7f73d681924f414e8a50bc07166effbd",
+      "Id": "cad19f9542844ac1bfe2156e9c35670a"
+    },
+    {
+      "Start": "b521de811c7a4ac29f9fdced1c0434ec",
+      "End": "2ba7ee8e35dd45a2beb7e2cdab3a7d98",
+      "Id": "d785091f1d7c48959829ee4c4a92d70a"
+    },
+    {
+      "Start": "645da5fcbc1c47f1ad530b07d11da3c3",
+      "End": "9e1a84e6e0ac430682f51f9ae96e2730",
+      "Id": "a904ae1837ab4753a4d6c19e70ef46ff"
+    },
+    {
+      "Start": "e748a8ccf7924080be7ad8574a83e8a7",
+      "End": "b0fcd41c974e4c91973981673724dfca",
+      "Id": "a8b4474b1d294561b472ec5aa5a575b3"
+    },
+    {
+      "Start": "fe59c2752b184339b5c75963c363f892",
+      "End": "154116d89bf5489bba1a392f691b439d",
+      "Id": "17d70b60598043b2a783f02aa1fb199a"
+    },
+    {
+      "Start": "899e6d068173413bbfecf1ee75c41aac",
+      "End": "af47165771e44507bae0e7c5717c0c23",
+      "Id": "42871818700348b3a3d5ee24eef2333e"
+    },
+    {
+      "Start": "899e6d068173413bbfecf1ee75c41aac",
+      "End": "facb42b57c294f3e8841f50b42a1514a",
+      "Id": "392a6a66d71c4376850e4382ecb934ad"
+    },
+    {
+      "Start": "04439890ee7241f0a44e0ca3687172b6",
+      "End": "467acc1405e84a9ca2555a530ae7b80b",
+      "Id": "8d2149a0b62b43faad801711c60a8d36"
+    },
+    {
+      "Start": "04439890ee7241f0a44e0ca3687172b6",
+      "End": "178a4ad25bef4752b14b253f74b37c73",
+      "Id": "875722ddf5244ce98fe2f8ce8ad0d4ee"
+    },
+    {
+      "Start": "04439890ee7241f0a44e0ca3687172b6",
+      "End": "2b5a7ec2c54641c8b2c995a64d67ff2a",
+      "Id": "8d451eb482544920801df388bce85c5c"
+    },
+    {
+      "Start": "97a6a28b865e4f118847030f867f0498",
+      "End": "32f014238bec4f6cb0eb72d08a47f87f",
+      "Id": "72333c4a492846dc97cc393642c424ab"
+    },
+    {
+      "Start": "3615d190c42844e6b1f77d75f4f49077",
+      "End": "536973e668bf4eaaac4328b64dbff51b",
+      "Id": "6722575150e747b7bf3dd46a5dfe0873"
+    },
+    {
+      "Start": "edb5653584ad4e998c6b2c519a9c78e0",
+      "End": "f751fa2f61bc49448f19d96d574d2cd2",
+      "Id": "3b82ce742ebf479d89564d274cb7c004"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.6.1.8786",
+      "RunType": "Automatic",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Vista preliminar en segundo plano",
+      "EyeX": -4.2262480367013655,
+      "EyeY": 20.887551925220066,
+      "EyeZ": -0.18463288256978294,
+      "LookX": 0.00813771399181995,
+      "LookY": -9.4385459537857876,
+      "LookZ": -2.4621481704728,
+      "UpX": 0.0029448742130210662,
+      "UpY": 0.45399049973954669,
+      "UpZ": -0.89100165760906835
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Point.ByCoordinates",
+        "Id": "74ee4da3cc534d8599371f3fded8d77e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 535.0619728087222,
+        "Y": 524.39766506709941
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Circle.ByCenterPointRadius",
+        "Id": "3e67304470294c6285864dedc3fbed3a",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1619.9428624796574,
+        "Y": 537.93258421628548
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Number Slider",
+        "Id": "e9104d7bb50c49fe96d5745863a73b6d",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 145.25031984889938,
+        "Y": 1064.4890186845719
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Number Slider",
+        "Id": "fb8e102e7ae541c0b8c4ed679bf09bc4",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 146.36924315295346,
+        "Y": 1265.2346359828382
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Point.ByCoordinates",
+        "Id": "b075fff532ec41948b3bbfdae3d07b11",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 546.4547924055114,
+        "Y": 1071.3778116292551
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Geometry.DistanceTo",
+        "Id": "23c6779156794c7bbff2e1b9d5d25aa1",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 790.39034744198318,
+        "Y": 1059.6827066159403
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "751b01e0acbe4a4a92b7b34bd884d45b",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 299.47141015762168,
+        "Y": 532.79406053391449
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "fc8c814dc2ce470c8956d951af6e6ae1",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1048.5240458494197,
+        "Y": 746.15468509893867
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "9428d01f219d45c0b4980b2944212841",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1248.8101146235488,
+        "Y": 746.82151719353226
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "List.MaximumItem",
+        "Id": "cbf074015545479eb57729bef60dd254",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1104.13043858672,
+        "Y": 1069.8289406683002
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "43ec34ac11ba4eb1b58f5258577e5396",
+        "Title": "EJERCICIO LACING:\r\n\r\n1. Dibujar una malla de puntos plana.\r\n2. Dibujar un punto que se pueda deslizar por la malla de puntos.\r\n3. Según muevo el punto de sitio, los circulos que están más cerca reducen su radio a 0, y los círculos que están más lejos amplian su radio a la distancia media entre dos puntos.",
+        "Nodes": [],
+        "Left": 133.0,
+        "Top": 117.0,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "31ca17fd9867431b980710a9bd15b9a5",
+        "Title": "Genero un punto en el origen de coordenadas",
+        "Nodes": [],
+        "Left": 487.42531444603571,
+        "Top": 451.88488297441279,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "ffb50b03dfd14deda1208ccb30aa66f1",
+        "Title": "Lo copio a una distancia de 1, 10 veces.",
+        "Nodes": [],
+        "Left": 226.79407978877418,
+        "Top": 457.42101436113728,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "9711f9d7259e4d449d8bdbe7c82fb530",
+        "Title": "Genero el punto que voy a desplazar.",
+        "Nodes": [],
+        "Left": 388.99587497758364,
+        "Top": 997.67551626351133,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "409cde13557c4916ba74b9219364611d",
+        "Title": "Busco la distancia entre el punto y la malla.",
+        "Nodes": [],
+        "Left": 784.18461633349784,
+        "Top": 1012.3897728366785,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "e3361f238eb54e79a4025c027e0b85f0",
+        "Title": "Obtengo el valor máximo de la lista de distancia entre el punto movil y la malla.",
+        "Nodes": [],
+        "Left": 1046.9892442449111,
+        "Top": 1382.6046315089141,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "fd01b82eec124a4daa162415e3ace408",
+        "Title": "Distancia entre dos puntos de la malla partida por dos, para generar el radio máximo.",
+        "Nodes": [],
+        "Left": 939.20564788716365,
+        "Top": 677.79363619564333,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": 194.26746937722612,
+    "Y": 80.154447496269029,
+    "Zoom": 0.44314570172316248
+  }
+}

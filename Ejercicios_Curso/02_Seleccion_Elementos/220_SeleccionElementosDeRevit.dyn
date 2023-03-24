@@ -1,0 +1,1252 @@
+{
+  "Uuid": "3c9d0464-8643-5ffe-96e5-ab1769818209",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "220_SeleccionElementosDeRevit",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Nodes.DSModelElementSelection, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "InstanceId": [
+        "e4f05d0a-c9ba-4b9b-98f9-1b1d72f6a4dc-00030b67"
+      ],
+      "Id": "6b40530f3cd44c839bea7497184921dd",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "4d93467f3eda4f86a27a6d64db854f57",
+          "Name": "Element",
+          "Description": "The selected elements.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled"
+    },
+    {
+      "ConcreteType": "Dynamo.Nodes.DSModelElementsSelection, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "InstanceId": [
+        "e4f05d0a-c9ba-4b9b-98f9-1b1d72f6a4dc-00030b33",
+        "e4f05d0a-c9ba-4b9b-98f9-1b1d72f6a4dc-00030b67",
+        "e4f05d0a-c9ba-4b9b-98f9-1b1d72f6a4dc-00030ba7",
+        "e4f05d0a-c9ba-4b9b-98f9-1b1d72f6a4dc-00030be7",
+        "e4f05d0a-c9ba-4b9b-98f9-1b1d72f6a4dc-00031b51",
+        "e4f05d0a-c9ba-4b9b-98f9-1b1d72f6a4dc-00031b8a",
+        "e4f05d0a-c9ba-4b9b-98f9-1b1d72f6a4dc-000346cc",
+        "e4f05d0a-c9ba-4b9b-98f9-1b1d72f6a4dc-0003473a",
+        "e4f05d0a-c9ba-4b9b-98f9-1b1d72f6a4dc-00034774",
+        "e4f05d0a-c9ba-4b9b-98f9-1b1d72f6a4dc-000347e0",
+        "e4f05d0a-c9ba-4b9b-98f9-1b1d72f6a4dc-00034818",
+        "e4f05d0a-c9ba-4b9b-98f9-1b1d72f6a4dc-0003499b",
+        "e4f05d0a-c9ba-4b9b-98f9-1b1d72f6a4dc-0003499e",
+        "e4f05d0a-c9ba-4b9b-98f9-1b1d72f6a4dc-0003499f",
+        "e4f05d0a-c9ba-4b9b-98f9-1b1d72f6a4dc-000349a1",
+        "e4f05d0a-c9ba-4b9b-98f9-1b1d72f6a4dc-000349a2",
+        "e4f05d0a-c9ba-4b9b-98f9-1b1d72f6a4dc-000349d3",
+        "e4f05d0a-c9ba-4b9b-98f9-1b1d72f6a4dc-00034a23",
+        "e4f05d0a-c9ba-4b9b-98f9-1b1d72f6a4dc-00034a59",
+        "e4f05d0a-c9ba-4b9b-98f9-1b1d72f6a4dc-00034ad5",
+        "e4f05d0a-c9ba-4b9b-98f9-1b1d72f6a4dc-00034e7d",
+        "e4f05d0a-c9ba-4b9b-98f9-1b1d72f6a4dc-00034ee1",
+        "e4f05d0a-c9ba-4b9b-98f9-1b1d72f6a4dc-00034efa",
+        "e4f05d0a-c9ba-4b9b-98f9-1b1d72f6a4dc-00034efb"
+      ],
+      "Id": "b8032ada4b0a46e19315c8833c352ed4",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "68b2ff7bacd541c3bd37f1d30d7e9899",
+          "Name": "Elements",
+          "Description": "The selected elements.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled"
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.Categories, DSRevitNodesUI",
+      "SelectedIndex": 160,
+      "SelectedString": "OST_Doors",
+      "NodeType": "ExtensionNode",
+      "Id": "fc320db5874a4a47973e65c63e9adf8f",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "71e2511c189e4178b988057982c777ea",
+          "Name": "Category",
+          "Description": "The selected Category.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "All built-in categories."
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.ElementsOfCategory, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "Id": "8fa6fc5d81fc411a8d75e8652a68573f",
+      "Inputs": [
+        {
+          "Id": "05c2b9ecb87b4c20bfa26b3318147193",
+          "Name": "Category",
+          "Description": "The Category",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "7b43db0a99334c72892f05067c352519",
+          "Name": "Elements",
+          "Description": "An element type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Get all elements of the specified category from the model."
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.ElementsAtLevel, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "Id": "c53f708014bb4fefaf10a3fa956c84bb",
+      "Inputs": [
+        {
+          "Id": "3f669c637a4e425f83d8a7f01b96ac9e",
+          "Name": "Level",
+          "Description": "A Level",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "f78afa817aa14e48b85afc20abe06f5f",
+          "Name": "Elements",
+          "Description": "Elements at the given level.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Get all the elements at the specified Level from the model."
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.Levels, DSRevitNodesUI",
+      "SelectedIndex": 0,
+      "SelectedString": "Level 1",
+      "NodeType": "ExtensionNode",
+      "Id": "aa079f3624c842098b52fbc772e8a311",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "e18cd5813655433f8feef4ae9e57eb81",
+          "Name": "Levels",
+          "Description": "The selected Levels",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Select a level in the active document"
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.ElementsOfFamilyType, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "Id": "0af0eb984ce848b5b1c77ba85f60dceb",
+      "Inputs": [
+        {
+          "Id": "3af4f9ef1e50430a89fbe89f3787178f",
+          "Name": "Family Type",
+          "Description": "The Family Type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "f159bdf7b71146f39d96b0b8958031bd",
+          "Name": "Elements",
+          "Description": "The list of elements matching the query.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Get all elements of the specified family type from the model."
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.FamilyTypes, DSRevitNodesUI",
+      "SelectedIndex": 28,
+      "SelectedString": "M_Door-Double-Flush_Panel:1800 x 2100mm",
+      "NodeType": "ExtensionNode",
+      "Id": "21bc35cd24d7456d95b60b299193ac1e",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "5739754b88da405f8e898219b09e21b1",
+          "Name": "Family Type",
+          "Description": "The selected Family Type",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "All family types available in the document."
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.ElementsInView, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "Id": "3045fc99704546488ed724c3f7194f32",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "363c5d3bbf9e47ac9b6b4df31964fcdf",
+          "Name": "elements",
+          "Description": "All visible elements in the active view.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Get all the elements which are visible in the active view."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Revit.Elements.Element.Geometry",
+      "Id": "53905ffa85614edcae1a33677604bb6f",
+      "Inputs": [
+        {
+          "Id": "c52760dc5f3246e78d4e58900e61b6c6",
+          "Name": "element",
+          "Description": "Revit.Elements.Element",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "ad0eb8242b114230908a5063e1830e13",
+          "Name": "var[]",
+          "Description": "var[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get all of the Geometry associated with this object\n\nElement.Geometry ( ): var[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Nodes.DSFaceSelection, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "InstanceId": [
+        "e4f05d0a-c9ba-4b9b-98f9-1b1d72f6a4dc-00031ca1:6:SURFACE"
+      ],
+      "Id": "de9a48ac07eb49a5b758fb0b14d07e94",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "610c996c6389464583f0fcc91c595484",
+          "Name": "Surface",
+          "Description": "The selected elements.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled"
+    },
+    {
+      "ConcreteType": "Dynamo.Nodes.DSModelElementSelection, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "InstanceId": [],
+      "Id": "7014a82f08024b24b22fa2999f9e57d4",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "430c38c7417c4f83bc4eef5126609cd2",
+          "Name": "Element",
+          "Description": "The selected elements.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled"
+    },
+    {
+      "ConcreteType": "Dynamo.Nodes.DSModelElementsSelection, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "InstanceId": [],
+      "Id": "e915677886dc450cb336ba6b3ade848e",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "18cf60e0cc2145cb8bfc5224566b356f",
+          "Name": "Elements",
+          "Description": "The selected elements.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled"
+    },
+    {
+      "ConcreteType": "Dynamo.Nodes.DSFaceSelection, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "InstanceId": [],
+      "Id": "042a8345c20a46bd8e4f9536167e845b",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "b0b1e2839b5c4abcbbf8e03423db0e26",
+          "Name": "Surface",
+          "Description": "The selected elements.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "71e2511c189e4178b988057982c777ea",
+      "End": "05c2b9ecb87b4c20bfa26b3318147193",
+      "Id": "adb74cb855aa44349ed813ad1a647df1"
+    },
+    {
+      "Start": "e18cd5813655433f8feef4ae9e57eb81",
+      "End": "3f669c637a4e425f83d8a7f01b96ac9e",
+      "Id": "ca3ad2fbb9324c31ba37a58067a28451"
+    },
+    {
+      "Start": "5739754b88da405f8e898219b09e21b1",
+      "End": "3af4f9ef1e50430a89fbe89f3787178f",
+      "Id": "1ebba8fb05fa4ecf884d61049fe59a8e"
+    },
+    {
+      "Start": "363c5d3bbf9e47ac9b6b4df31964fcdf",
+      "End": "c52760dc5f3246e78d4e58900e61b6c6",
+      "Id": "fd52efb33bc443149bdd2625b468f9dc"
+    }
+  ],
+  "Dependencies": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.2.1.5175",
+      "RunType": "Automatic",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": 45984.0,
+      "EyeY": 12113.490234375,
+      "EyeZ": -7866.349609375,
+      "LookX": -35184.1640625,
+      "LookY": -19853.92578125,
+      "LookZ": 25760.94140625,
+      "UpX": -0.16913089156150818,
+      "UpY": 0.97778326272964478,
+      "UpZ": 0.12383329123258591
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Select Model Element",
+        "Id": "6b40530f3cd44c839bea7497184921dd",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 790.292263475928,
+        "Y": 468.481736512886
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Select Model Elements",
+        "Id": "b8032ada4b0a46e19315c8833c352ed4",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1314.74622279808,
+        "Y": 457.607025010007
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Categories",
+        "Id": "fc320db5874a4a47973e65c63e9adf8f",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1665.17504331292,
+        "Y": 538.203869230917
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "All Elements of Category",
+        "Id": "8fa6fc5d81fc411a8d75e8652a68573f",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1949.41539498533,
+        "Y": 538.203869230918
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "All Elements at Level",
+        "Id": "c53f708014bb4fefaf10a3fa956c84bb",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2602.83011204345,
+        "Y": 533.74307584984
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Levels",
+        "Id": "aa079f3624c842098b52fbc772e8a311",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2296.48432051117,
+        "Y": 535.416719686677
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "All Elements of Family Type",
+        "Id": "0af0eb984ce848b5b1c77ba85f60dceb",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 3302.00279396765,
+        "Y": 553.247477312201
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Family Types",
+        "Id": "21bc35cd24d7456d95b60b299193ac1e",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2863.40058231741,
+        "Y": 558.058512973858
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "All Elements In Active View",
+        "Id": "3045fc99704546488ed724c3f7194f32",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 3691.63679882215,
+        "Y": 548.563546457561
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Element.Geometry",
+        "Id": "53905ffa85614edcae1a33677604bb6f",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 4047.0150011896,
+        "Y": 550.937211392764
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Select Face",
+        "Id": "de9a48ac07eb49a5b758fb0b14d07e94",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 4697.58685473219,
+        "Y": 435.146057974679
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Select Model Element",
+        "Id": "7014a82f08024b24b22fa2999f9e57d4",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 503.652310579436,
+        "Y": 468.481736512886
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Select Model Elements",
+        "Id": "e915677886dc450cb336ba6b3ade848e",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1002.82535844019,
+        "Y": 457.607025010007
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Select Face",
+        "Id": "042a8345c20a46bd8e4f9536167e845b",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 4355.77533015585,
+        "Y": 435.146057974679
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "529fe65f87e44da5ae1fb1aa73e558bd",
+        "Title": "134_SeleccionElementosDeRevit_ER",
+        "Nodes": [
+          "597987b76f5d40f88a68179711dd2503",
+          "b1db0ae831b44e1db5aec0ac5c2886ca",
+          "d5dca43b41da4f55915c91843b0a2c8c",
+          "eae49aeaaa0d472baab1bd357690d0ce"
+        ],
+        "Left": 448.439879730607,
+        "Top": -217.857737799865,
+        "Width": 479.05666666666667,
+        "Height": 254.31456056939919,
+        "FontSize": 30.0,
+        "InitialTop": -171.857737799865,
+        "InitialHeight": 289.314560569399,
+        "TextblockHeight": 36.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "c39debc52bed44f4b8191da95b30a8df",
+        "Title": "",
+        "Nodes": [
+          "e73590c94a594db2b5aa6fd1ca2de012"
+        ],
+        "Left": 952.154248579781,
+        "Top": -29.7834878486576,
+        "Width": 154.0,
+        "Height": 90.0,
+        "FontSize": 30.0,
+        "InitialTop": 16.2165121513424,
+        "InitialHeight": 140.0,
+        "TextblockHeight": 36.0,
+        "Background": "#FFB9F9E1"
+      },
+      {
+        "Id": "a1bedb316ee743a78f498783067ed8fe",
+        "Title": "",
+        "Nodes": [
+          "2ba6812826a64cd7823090b211f2b123"
+        ],
+        "Left": 949.002676239677,
+        "Top": -216.62365276095,
+        "Width": 177.0,
+        "Height": 90.0,
+        "FontSize": 30.0,
+        "InitialTop": -170.62365276095,
+        "InitialHeight": 140.0,
+        "TextblockHeight": 36.0,
+        "Background": "#FFBB87C6"
+      },
+      {
+        "Id": "e1a4b308f70e4a678a940bf8aefeda66",
+        "Title": "",
+        "Nodes": [
+          "e9a2222983d0460aa2124c89d50d43d6"
+        ],
+        "Left": 947.948840994816,
+        "Top": -123.3443940542016,
+        "Width": 175.0,
+        "Height": 90.0,
+        "FontSize": 30.0,
+        "InitialTop": -77.3443940542016,
+        "InitialHeight": 140.0,
+        "TextblockHeight": 36.0,
+        "Background": "#FFFF7BAC"
+      },
+      {
+        "Id": "ca382be271a44af99d25d18bd6a1b32e",
+        "Title": "",
+        "Nodes": [
+          "a873f03061444e219d4fcfadf92f96f1"
+        ],
+        "Left": 1128.36992889289,
+        "Top": -124.2425210921426,
+        "Width": 80.0,
+        "Height": 90.0,
+        "FontSize": 30.0,
+        "InitialTop": -78.2425210921426,
+        "InitialHeight": 140.0,
+        "TextblockHeight": 36.0,
+        "Background": "#FF48B9FF"
+      },
+      {
+        "Id": "8529b144edd24f60b246de8dd18197d2",
+        "Title": "",
+        "Nodes": [
+          "fc4b7c36ade54121b821e1db2014735f"
+        ],
+        "Left": 1110.90431119064,
+        "Top": -30.5881119014766,
+        "Width": 175.0,
+        "Height": 90.0,
+        "FontSize": 30.0,
+        "InitialTop": 15.4118880985234,
+        "InitialHeight": 140.0,
+        "TextblockHeight": 36.0,
+        "Background": "#FFA4E1FF"
+      },
+      {
+        "Id": "8dbc6389b7cd4022af3908e68e849265",
+        "Title": "",
+        "Nodes": [
+          "9cb58a495e5348db8bf413b2d59f866c"
+        ],
+        "Left": 1129.57124636315,
+        "Top": -217.251999982714,
+        "Width": 204.0,
+        "Height": 90.0,
+        "FontSize": 30.0,
+        "InitialTop": -171.251999982714,
+        "InitialHeight": 140.0,
+        "TextblockHeight": 36.0,
+        "Background": "#FFFFAA45"
+      },
+      {
+        "Id": "991f44103ed24051ba79b8b4792078fc",
+        "Title": "",
+        "Nodes": [
+          "ee162348feb4441bb139d04498313e57"
+        ],
+        "Left": 1214.93558082184,
+        "Top": -122.9270147537286,
+        "Width": 207.0,
+        "Height": 90.0,
+        "FontSize": 30.0,
+        "InitialTop": -76.9270147537286,
+        "InitialHeight": 140.0,
+        "TextblockHeight": 36.0,
+        "Background": "#FFFFB8D8"
+      },
+      {
+        "Id": "d9d5b444248648e8957c8703318d69db",
+        "Title": "",
+        "Nodes": [
+          "5ec171fccc9d45d3927425221a834316"
+        ],
+        "Left": 1335.02713189104,
+        "Top": -216.983538559446,
+        "Width": 195.0,
+        "Height": 90.0,
+        "FontSize": 30.0,
+        "InitialTop": -170.983538559446,
+        "InitialHeight": 140.0,
+        "TextblockHeight": 36.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "54be43a41c5749d1983232f3eddbe3a9",
+        "Title": "1 _ Seleccionar un elemento del modelo",
+        "Nodes": [
+          "6b40530f3cd44c839bea7497184921dd",
+          "de6bff86d682461c9aa8e87d94cf1d0d",
+          "7014a82f08024b24b22fa2999f9e57d4",
+          "d598edb501b64b4ca52b718cf85f5bac"
+        ],
+        "Left": 451.023635401171,
+        "Top": 272.284585874516,
+        "Width": 518.26862807475709,
+        "Height": 315.19715063837003,
+        "FontSize": 30.0,
+        "InitialTop": 354.284585874516,
+        "InitialHeight": 206.887991027538,
+        "TextblockHeight": 72.0,
+        "Background": "#FFBB87C6"
+      },
+      {
+        "Id": "d065da3fea0a488ab154e8c81932c78f",
+        "Title": "2 _ Seleccionar varios elementos del modelo ",
+        "Nodes": [
+          "b8032ada4b0a46e19315c8833c352ed4",
+          "e915677886dc450cb336ba6b3ade848e",
+          "861f0c7b359e4da1a9544ca96111428a",
+          "2f487e41b4c943c5bbeeff1a0017504b"
+        ],
+        "Left": 992.82535844019,
+        "Top": 271.607025010007,
+        "Width": 600.92086435789,
+        "Height": 387.0,
+        "FontSize": 30.0,
+        "InitialTop": 317.607025010007,
+        "InitialHeight": 405.972718937456,
+        "TextblockHeight": 36.0,
+        "Background": "#FFBB87C6"
+      },
+      {
+        "Id": "dcce87dc5ec6411290849ec2dce0b4d9",
+        "Title": "3_ Selección de todos los elementos de la misma categoría del modelo",
+        "Nodes": [
+          "fc320db5874a4a47973e65c63e9adf8f",
+          "8fa6fc5d81fc411a8d75e8652a68573f",
+          "e59d103b9d13446b9f245eeafc25e26f",
+          "facf5e2305794efb9cd06e91d17ff3dd",
+          "fc6f26a722ab4b529eca762af16f2f8e"
+        ],
+        "Left": 1616.12164104836,
+        "Top": 271.935221767288,
+        "Width": 574.91616892834008,
+        "Height": 359.26864746363003,
+        "FontSize": 30.0,
+        "InitialTop": 353.935221767288,
+        "InitialHeight": 272.43222468896,
+        "TextblockHeight": 72.0,
+        "Background": "#FFBB87C6"
+      },
+      {
+        "Id": "774a5a38bc9048008b4552fc1763705e",
+        "Title": "4 _ Selección de todos los elementos pertenecientes al mismo nivel del modelo",
+        "Nodes": [
+          "c53f708014bb4fefaf10a3fa956c84bb",
+          "aa079f3624c842098b52fbc772e8a311",
+          "bf02b390f1944eebb871bb7da0ef7e18",
+          "bdb20e097be840279d058b2d603747b8",
+          "7603b1fc6fc84483be4eae2cdc878054"
+        ],
+        "Left": 2213.00956535581,
+        "Top": 272.269954669495,
+        "Width": 620.86988164306013,
+        "Height": 356.14676501718196,
+        "FontSize": 30.0,
+        "InitialTop": 354.269954669495,
+        "InitialHeight": 306.032211852359,
+        "TextblockHeight": 72.0,
+        "Background": "#FFBB87C6"
+      },
+      {
+        "Id": "7b32c2a74f0f4be293715a88022d4410",
+        "Title": "7 _ Selección de la geometría de un conjunto de elementos",
+        "Nodes": [
+          "53905ffa85614edcae1a33677604bb6f",
+          "779dd19df69142c08e95caa538f1be33"
+        ],
+        "Left": 3982.80537688162,
+        "Top": 277.63385439816,
+        "Width": 317.99999999999955,
+        "Height": 366.303356994604,
+        "FontSize": 30.0,
+        "InitialTop": 395.63385439816,
+        "InitialHeight": 262.48863633249,
+        "TextblockHeight": 108.0,
+        "Background": "#FFBB87C6"
+      },
+      {
+        "Id": "87a4883f8c7a478e93fa1baf835f9ec2",
+        "Title": "5 _ Selección de todos los elementos de la misma familia del modelo",
+        "Nodes": [
+          "0af0eb984ce848b5b1c77ba85f60dceb",
+          "21bc35cd24d7456d95b60b299193ac1e",
+          "6d69cd4b68e14eb682e219921fe1bf31",
+          "c646993c1530450f9f6b5ec3acb06629",
+          "74dca7eb5580449497882364c1c993ff"
+        ],
+        "Left": 2853.40058231741,
+        "Top": 273.187774286246,
+        "Width": 748.01819446554964,
+        "Height": 377.870738687612,
+        "FontSize": 30.0,
+        "InitialTop": 355.187774286246,
+        "InitialHeight": 325.870738687608,
+        "TextblockHeight": 72.0,
+        "Background": "#FFBB87C6"
+      },
+      {
+        "Id": "814b19258e834da8b7142783dc1c5a95",
+        "Title": "6 _ Selección de todos los elementos de la vista activa que tengamos en ese instante del modelo",
+        "Nodes": [
+          "3045fc99704546488ed724c3f7194f32",
+          "fa762682d8dc4da9950f83ccc1a96596"
+        ],
+        "Left": 3629.27484639972,
+        "Top": 277.283604280118,
+        "Width": 309.0,
+        "Height": 364.27994217744293,
+        "FontSize": 30.0,
+        "InitialTop": 467.283604280118,
+        "InitialHeight": 227.218576405078,
+        "TextblockHeight": 180.0,
+        "Background": "#FFBB87C6"
+      },
+      {
+        "Id": "715fc985658e42cd943d9fb9b5bf380b",
+        "Title": "8 _ Selección de una cara de un elemento",
+        "Nodes": [
+          "de9a48ac07eb49a5b758fb0b14d07e94",
+          "042a8345c20a46bd8e4f9536167e845b",
+          "fae2e2ee77df4807b1943c77739ea740",
+          "903edd2558f349e984db165a66c8b5da"
+        ],
+        "Left": 4323.77718431469,
+        "Top": 277.319995648973,
+        "Width": 604.80967041749955,
+        "Height": 276.826062325706,
+        "FontSize": 30.0,
+        "InitialTop": 323.319995648973,
+        "InitialHeight": 260.826062325707,
+        "TextblockHeight": 36.0,
+        "Background": "#FFBB87C6"
+      },
+      {
+        "Id": "b1db0ae831b44e1db5aec0ac5c2886ca",
+        "Title": "Bloque de DLAP: Iniciación",
+        "Nodes": [],
+        "Left": 458.439879730607,
+        "Top": -119.187325408761,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "d5dca43b41da4f55915c91843b0a2c8c",
+        "Title": "Packages utilizados: ninguno",
+        "Nodes": [],
+        "Left": 458.951448942607,
+        "Top": -66.5169130176568,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "597987b76f5d40f88a68179711dd2503",
+        "Title": "Dynamo generado por: Luisa Santamaría",
+        "Nodes": [],
+        "Left": 458.439879730607,
+        "Top": -171.857737799865,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "eae49aeaaa0d472baab1bd357690d0ce",
+        "Title": "Qué hace este dynamo: Diferentes modos de seleccionar elementos del modelo de Revit",
+        "Nodes": [],
+        "Left": 458.951448942607,
+        "Top": -22.5431772304658,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "e73590c94a594db2b5aa6fd1ca2de012",
+        "Title": "Introducción de texto",
+        "Nodes": [],
+        "Left": 962.154248579781,
+        "Top": 16.2165121513424,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "2ba6812826a64cd7823090b211f2b123",
+        "Title": "Seleccion Elementos Revit",
+        "Nodes": [],
+        "Left": 959.002676239677,
+        "Top": -170.62365276095,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "e9a2222983d0460aa2124c89d50d43d6",
+        "Title": "Reestructuración de listas",
+        "Nodes": [],
+        "Left": 957.948840994816,
+        "Top": -77.3443940542016,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "a873f03061444e219d4fcfadf92f96f1",
+        "Title": "Filtrado",
+        "Nodes": [],
+        "Left": 1138.36992889289,
+        "Top": -78.2425210921426,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "fc4b7c36ade54121b821e1db2014735f",
+        "Title": "Generación de Geometría",
+        "Nodes": [],
+        "Left": 1120.90431119064,
+        "Top": 15.4118880985234,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "9cb58a495e5348db8bf413b2d59f866c",
+        "Title": "Volcado de información a Revit",
+        "Nodes": [],
+        "Left": 1139.57124636315,
+        "Top": -171.251999982714,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "ee162348feb4441bb139d04498313e57",
+        "Title": "Generación de series de valores",
+        "Nodes": [],
+        "Left": 1224.93558082184,
+        "Top": -76.9270147537286,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "5ec171fccc9d45d3927425221a834316",
+        "Title": "Volcado de modelado a Revit",
+        "Nodes": [],
+        "Left": 1345.02713189104,
+        "Top": -170.983538559446,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "de6bff86d682461c9aa8e87d94cf1d0d",
+        "Title": "Este nodo permite seleccionar UN ÚNICO ELEMENTO del modelo. Una vez está en el área de trabajo, solo hay que pulsar Seleccionar y, en el modelo de Revit, seleccionar lo que quieres.\r\nEn el nodo saldrá entonces la categoría del elemento y, en verde, el identificador del mismo. ",
+        "Nodes": [],
+        "Left": 461.023635401171,
+        "Top": 354.284585874516,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "d598edb501b64b4ca52b718cf85f5bac",
+        "Title": "Resultado final",
+        "Nodes": [],
+        "Left": 830.82739257262,
+        "Top": 433.147634954306,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "861f0c7b359e4da1a9544ca96111428a",
+        "Title": "Este nodo permite seleccionar VARIOS ELEMENTOS del modelo. Una vez está en el área de trabajo, solo hay que pulsar Seleccionar y, en el modelo de Revit, arrastrando en diagonal, seleccionar lo que quieres.\r\nEn el nodo saldrá entonces la ID de todos los elementos seleccionados, y en la lista, saldrá la categoría de cada elemento y, en verde, el identificador del mismo. ",
+        "Nodes": [],
+        "Left": 1002.82535844019,
+        "Top": 317.607025010007,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "2f487e41b4c943c5bbeeff1a0017504b",
+        "Title": "Resultado final",
+        "Nodes": [],
+        "Left": 1401.1347257161,
+        "Top": 414.997599258527,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "e59d103b9d13446b9f245eeafc25e26f",
+        "Title": "Esta selección de elementos se realiza mediante dos nodos ya que, en primer lugar hay que indicar a qué categoría pertenecen los elementos que queremos seleccionar del modelo, y, posteriormente indicarle que queremos seleccionarlos todos.",
+        "Nodes": [],
+        "Left": 1756.58218806556,
+        "Top": 353.935221767288,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "facf5e2305794efb9cd06e91d17ff3dd",
+        "Title": "1º En el desplegable del nodo seleccionamos la categoría de los elementos a seleccionar",
+        "Nodes": [],
+        "Left": 1626.12164104836,
+        "Top": 454.481643743077,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "fc6f26a722ab4b529eca762af16f2f8e",
+        "Title": "2º Y este nodo seleccionará todos los elementos, presentes en el modelo, pertenecientes a la categoría que le hemos indicado.",
+        "Nodes": [],
+        "Left": 1902.0378099767,
+        "Top": 453.404567853096,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "bf02b390f1944eebb871bb7da0ef7e18",
+        "Title": "Esta selección de elementos se realiza mediante dos nodos ya que, en primer lugar hay que indicar a qué nivel del proyecto perteneceán los elementos que queremos seleccionar del modelo, y, posteriormente indicarle que queremos seleccionarlos todos.",
+        "Nodes": [],
+        "Left": 2369.6752934414,
+        "Top": 354.269954669495,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "bdb20e097be840279d058b2d603747b8",
+        "Title": "1º En el desplegable del nodo seleccionamos el nivel al que pertenecen los elementos a seleccionar",
+        "Nodes": [],
+        "Left": 2223.00956535581,
+        "Top": 455.588051934256,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "7603b1fc6fc84483be4eae2cdc878054",
+        "Title": "2º Y este nodo seleccionará todos los elementos, presentes en el modelo, pertenecientes al nivel que le hemos indicado.",
+        "Nodes": [],
+        "Left": 2532.87944699887,
+        "Top": 453.739300755303,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "779dd19df69142c08e95caa538f1be33",
+        "Title": "Al utilizar el tipo de nodos All Elements at // All Elements of  estamos seleccionando los elementos y los mostrará como una lista de Identificadores. Si lo que buscamos es seleccionar la geometría de dichos elementos, hay que utilizar el nodo Element.Geometry. De este modo traerá a Dynano la geometría de todos aquellos elementos cuyo ID le proporcionemos como input ",
+        "Nodes": [],
+        "Left": 3992.80537688162,
+        "Top": 395.63385439816,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "6d69cd4b68e14eb682e219921fe1bf31",
+        "Title": "Esta selección de elementos se realiza mediante dos nodos ya que, en primer lugar hay que indicar a qué familia pertenecerán los elementos que queremos seleccionar del modelo, y, posteriormente indicarle que queremos seleccionarlos todos.",
+        "Nodes": [],
+        "Left": 3102.25704205976,
+        "Top": 355.187774286246,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "c646993c1530450f9f6b5ec3acb06629",
+        "Title": "1º En el desplegable del nodo seleccionamos la familia a la que pertenecen los elementos a seleccionar",
+        "Nodes": [],
+        "Left": 2967.08819900078,
+        "Top": 456.505871551008,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "74dca7eb5580449497882364c1c993ff",
+        "Title": "2º Este nodo seleccionará todos los elementos, presentes en el modelo, pertenecientes a la familia que le hemos indicado.",
+        "Nodes": [],
+        "Left": 3303.41877678296,
+        "Top": 459.468156033716,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "fa762682d8dc4da9950f83ccc1a96596",
+        "Title": "Este nodo permite seleccionar todos los elementos de la vista activa en ese instante en el modelo. Una vez está en el área de trabajo, automáticamente toma la vista activa en ese momento.",
+        "Nodes": [],
+        "Left": 3639.27484639972,
+        "Top": 467.283604280118,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "fae2e2ee77df4807b1943c77739ea740",
+        "Title": "Este nodo permite seleccionar, desde el modelo re Revit, la cara de un elemento. Al sacarlo al área de trabajo solo hay que presionar sobre seleccionar, y en Revit marcamos la cara del elemento que deseamos.",
+        "Nodes": [],
+        "Left": 4333.77718431469,
+        "Top": 323.319995648973,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "903edd2558f349e984db165a66c8b5da",
+        "Title": "Resultado final",
+        "Nodes": [],
+        "Left": 4758.90460876901,
+        "Top": 391.757722540508,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": 61.296014666826068,
+    "Y": 477.3862089654,
+    "Zoom": 0.49014929823561
+  }
+}

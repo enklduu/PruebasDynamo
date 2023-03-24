@@ -1,0 +1,1167 @@
+{
+  "Uuid": "3c9d0464-8643-5ffe-96e5-ab1769818209",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "Solucion01_Codeblocks",
+  "ElementResolver": {
+    "ResolutionMap": {
+      "Autodesk.Point": {
+        "Key": "Autodesk.DesignScript.Geometry.Point",
+        "Value": "ProtoGeometry.dll"
+      },
+      "Autodesk.DesignScript.Geometry.Point": {
+        "Key": "Autodesk.DesignScript.Geometry.Point",
+        "Value": "ProtoGeometry.dll"
+      },
+      "Arc": {
+        "Key": "Autodesk.DesignScript.Geometry.Arc",
+        "Value": "ProtoGeometry.dll"
+      }
+    }
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "1..84..7;",
+      "Id": "740bdb310dc644998ffe48ba940d2b9f",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "0a6f4dc694e8441e8333acf7a14208a7",
+          "Name": "",
+          "Description": "Valor de la expresión en la línea 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Permite creación directa de código de DesignScript"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "1..84..#8;",
+      "Id": "a51f7e320cd440dbaf8659ef371bbe0e",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "17ea0eaf74bf420c84678c23276ea08e",
+          "Name": "",
+          "Description": "Valor de la expresión en la línea 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Permite creación directa de código de DesignScript"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "\"un texto cualquiera\";",
+      "Id": "dd913b0ff0d345bca83e48d1dfc68f63",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "3bc19d1e2f4c4bdc95dbc64b746413df",
+          "Name": "",
+          "Description": "Valor de la expresión en la línea 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Permite creación directa de código de DesignScript"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "a+b;",
+      "Id": "3645dc837aae449182fa4ceebf4b9726",
+      "Inputs": [
+        {
+          "Id": "43ae9dcaf67e48f0858288c93b9c97b5",
+          "Name": "a",
+          "Description": "a",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f65e5b2c92e34d5a91c9137cbb03bc0e",
+          "Name": "b",
+          "Description": "b",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "88d7da0963984f269b17f122a3f988fe",
+          "Name": "",
+          "Description": "Valor de la expresión en la línea 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Permite creación directa de código de DesignScript"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double",
+      "Id": "aecace88295e4901a41310c2c68720d9",
+      "Inputs": [
+        {
+          "Id": "9a7bf132924c400e8a139634d1c4228b",
+          "Name": "x",
+          "Description": "double\nValor por defecto : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c420ce8770d84ed1bb52b5047656322b",
+          "Name": "y",
+          "Description": "double\nValor por defecto : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "edbb539e373f4146bace7b4bab2f8441",
+          "Name": "z",
+          "Description": "double\nValor por defecto : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "0e1ad81063b04c83a6a34f7aaa397e63",
+          "Name": "Point",
+          "Description": "Point",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Genera un punto con las tres coordenadas cartesianas especificadas.\n\nPoint.ByCoordinates (x: double = 0, y: double = 0, z: double = 0): Point"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double",
+      "Id": "de89853f5f094ecab04d63e7dbda782d",
+      "Inputs": [
+        {
+          "Id": "20ae966c718042f9b828776f85f4ed07",
+          "Name": "x",
+          "Description": "double\nValor por defecto : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f05ab83a080c4cc5ae81e6535aac69df",
+          "Name": "y",
+          "Description": "double\nValor por defecto : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3f9affc2e6904c12b3235efd47a1a596",
+          "Name": "z",
+          "Description": "double\nValor por defecto : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "8a121596031747b99c169cf5c360e721",
+          "Name": "Point",
+          "Description": "Point",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Genera un punto con las tres coordenadas cartesianas especificadas.\n\nPoint.ByCoordinates (x: double = 0, y: double = 0, z: double = 0): Point"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double",
+      "Id": "b8acf46fe45f4770a08b32f025cb2041",
+      "Inputs": [
+        {
+          "Id": "a3fd2d19f2854e12bbe4104c5541bfdd",
+          "Name": "x",
+          "Description": "double\nValor por defecto : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "305cb6f1c4154f95bddd088d8aa3bb55",
+          "Name": "y",
+          "Description": "double\nValor por defecto : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "2cd58da2605c43c7a4a2268938105434",
+          "Name": "z",
+          "Description": "double\nValor por defecto : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "e17ecf73ecf74d44905fe36daba1b78b",
+          "Name": "Point",
+          "Description": "Point",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Genera un punto con las tres coordenadas cartesianas especificadas.\n\nPoint.ByCoordinates (x: double = 0, y: double = 0, z: double = 0): Point"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "30;",
+      "Id": "973c44489afe43d596acdd826371904d",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "380ff99c46aa485fbe8e2c8e77f8e9f9",
+          "Name": "",
+          "Description": "Valor de la expresión en la línea 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Permite creación directa de código de DesignScript"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "point1 = Autodesk.Point.ByCoordinates(0, 0, 0);\npoint2 = Autodesk.Point.ByCoordinates(0, 30, 0);\npoint3 = Autodesk.Point.ByCoordinates(30, 30, 0);\narc1 = Arc.ByThreePoints(point1, point2, point3);",
+      "Id": "8cc481b5ec00457e805b839dcf8e660f",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "34be7da152454d9a8b6750e37f593deb",
+          "Name": "",
+          "Description": "point1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "7f91453f52cc4b0e9d532e61900c4662",
+          "Name": "",
+          "Description": "point2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "20dddbe3790e487190527947eb302bac",
+          "Name": "",
+          "Description": "point3",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "6e6d97d836974a83977f067ecb843280",
+          "Name": "",
+          "Description": "arc1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Permite creación directa de código de DesignScript"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Arc.ByThreePoints@Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.Point",
+      "Id": "109b92aa2e1d44c5a9e13db9ac3b3e01",
+      "Inputs": [
+        {
+          "Id": "90ee00ac04244713b5219346b31ff5d9",
+          "Name": "firstPoint",
+          "Description": "Primer punto en la curva\n\nPoint",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "38a40367a088443b8eb615e25dc15769",
+          "Name": "secondPoint",
+          "Description": "Segundo punto en la curva\n\nPoint",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "eabe45f7fb364947a9b34e06afc5fa11",
+          "Name": "thirdPoint",
+          "Description": "Tercer punto en la curva\n\nPoint",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "56bd018739d546a8a09cf454ff6979e5",
+          "Name": "Arc",
+          "Description": "Un arco",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Crea un arco a partir de la circunferencia de los tres puntos secuenciales proporcionados.\n\nArc.ByThreePoints (firstPoint: Point, secondPoint: Point, thirdPoint: Point): Arc"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "arc1 = Arc.ByThreePoints(point1, point2, point3);",
+      "Id": "cfc81089b8fd48b29880a046e9c83c8a",
+      "Inputs": [
+        {
+          "Id": "cd01a3490cca4a6f8481d9261fdf2ed7",
+          "Name": "point1",
+          "Description": "point1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "4320c5997ae84d228d6bca2cfe563fd3",
+          "Name": "point2",
+          "Description": "point2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "96feeb68fcd240ba9f7e88adaece6bb5",
+          "Name": "point3",
+          "Description": "point3",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "8a11638b7ef848c9a2c9960e38a2a04f",
+          "Name": "",
+          "Description": "arc1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Permite creación directa de código de DesignScript"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "17ea0eaf74bf420c84678c23276ea08e",
+      "End": "43ae9dcaf67e48f0858288c93b9c97b5",
+      "Id": "989c9719ae1046a4afe7df695f5c9875"
+    },
+    {
+      "Start": "3bc19d1e2f4c4bdc95dbc64b746413df",
+      "End": "f65e5b2c92e34d5a91c9137cbb03bc0e",
+      "Id": "0eaa1a72357a4cc1bfb714191c911c30"
+    },
+    {
+      "Start": "0e1ad81063b04c83a6a34f7aaa397e63",
+      "End": "90ee00ac04244713b5219346b31ff5d9",
+      "Id": "0bbc514c6d8b458696fc32a9321d256a"
+    },
+    {
+      "Start": "0e1ad81063b04c83a6a34f7aaa397e63",
+      "End": "cd01a3490cca4a6f8481d9261fdf2ed7",
+      "Id": "be5e34c70a2042d38df62c140ecdb57d"
+    },
+    {
+      "Start": "8a121596031747b99c169cf5c360e721",
+      "End": "38a40367a088443b8eb615e25dc15769",
+      "Id": "6ece6e96c7b948988152a57e60ceae02"
+    },
+    {
+      "Start": "8a121596031747b99c169cf5c360e721",
+      "End": "4320c5997ae84d228d6bca2cfe563fd3",
+      "Id": "2fdfd18b63454f74a1d84b96cde2ba87"
+    },
+    {
+      "Start": "e17ecf73ecf74d44905fe36daba1b78b",
+      "End": "eabe45f7fb364947a9b34e06afc5fa11",
+      "Id": "5fc618ee2dd745548d4ce96e6698481a"
+    },
+    {
+      "Start": "e17ecf73ecf74d44905fe36daba1b78b",
+      "End": "96feeb68fcd240ba9f7e88adaece6bb5",
+      "Id": "69250511994b40129b72985cc83d3e77"
+    },
+    {
+      "Start": "380ff99c46aa485fbe8e2c8e77f8e9f9",
+      "End": "a3fd2d19f2854e12bbe4104c5541bfdd",
+      "Id": "cb61de3d44a047a2a3ed8394c18a9d1f"
+    },
+    {
+      "Start": "380ff99c46aa485fbe8e2c8e77f8e9f9",
+      "End": "305cb6f1c4154f95bddd088d8aa3bb55",
+      "Id": "c2f66b3220bc4598919b621259c4422e"
+    },
+    {
+      "Start": "380ff99c46aa485fbe8e2c8e77f8e9f9",
+      "End": "f05ab83a080c4cc5ae81e6535aac69df",
+      "Id": "6fd9fbbe2167409f8dc153b510378547"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.6.1.8786",
+      "RunType": "Automatic",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Vista preliminar en segundo plano",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "740bdb310dc644998ffe48ba940d2b9f",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -333.140630262578,
+        "Y": 343.159641517295
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "a51f7e320cd440dbaf8659ef371bbe0e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 13.5195779038658,
+        "Y": 319.629851338723
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "dd913b0ff0d345bca83e48d1dfc68f63",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 299.684933569343,
+        "Y": 239.741188388981
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "3645dc837aae449182fa4ceebf4b9726",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 710.14956460102,
+        "Y": 395.42622281473
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Point.ByCoordinates",
+        "Id": "aecace88295e4901a41310c2c68720d9",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1365.76351165309,
+        "Y": 236.405955854097
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Point.ByCoordinates",
+        "Id": "de89853f5f094ecab04d63e7dbda782d",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1365.76351165309,
+        "Y": 413.289937064993
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Point.ByCoordinates",
+        "Id": "b8acf46fe45f4770a08b32f025cb2041",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1365.76351165309,
+        "Y": 585.77391827589
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "973c44489afe43d596acdd826371904d",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1071.29020963493,
+        "Y": 564.306878540271
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "8cc481b5ec00457e805b839dcf8e660f",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2601.25783282508,
+        "Y": 591.77391827589
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Arc.ByThreePoints",
+        "Id": "109b92aa2e1d44c5a9e13db9ac3b3e01",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1777.93332833178,
+        "Y": 236.405955854097
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "cfc81089b8fd48b29880a046e9c83c8a",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2060.31002670348,
+        "Y": 592.317584386633
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "c30eda5b83484980b99386413677d4ee",
+        "Title": "Ejercicio 1 _ Escribe el codeblock para hacer una lista de números que vaya del 1 al 84 saltando de 7 en 7.",
+        "Nodes": [
+          "740bdb310dc644998ffe48ba940d2b9f",
+          "0f046b2413294d24a6b3ab85eaccf500"
+        ],
+        "Left": -430.706040268792,
+        "Top": 96.730633235918987,
+        "Width": 315.0,
+        "Height": 339.429008281376,
+        "FontSize": 24.0,
+        "InitialTop": 221.730633235919,
+        "InitialHeight": 266.429008281376,
+        "TextblockHeight": 115.0,
+        "Background": "#FFFFB8D8"
+      },
+      {
+        "Id": "50efba0ef93e41308fb58f9fae7be8d9",
+        "Title": "Ejercicio 2 _ Haz lo mismo para que vaya del 1 al 84 saltando con 7 divisiones.",
+        "Nodes": [
+          "a51f7e320cd440dbaf8659ef371bbe0e",
+          "4f060845c6be4880a2b16ed24eec323c"
+        ],
+        "Left": -82.1537456898216,
+        "Top": 99.029382800826,
+        "Width": 316.0,
+        "Height": 313.600468537897,
+        "FontSize": 24.0,
+        "InitialTop": 195.029382800826,
+        "InitialHeight": 269.600468537897,
+        "TextblockHeight": 86.0,
+        "Background": "#FFFFB8D8"
+      },
+      {
+        "Id": "9e396ad5382f4d27b010e6b52604cb51",
+        "Title": "Ejercicio 3 _ Escribe un texto cualquiera con codeblocks",
+        "Nodes": [
+          "dd913b0ff0d345bca83e48d1dfc68f63",
+          "d1c61d8202bc4128be70d839ed0cf54d"
+        ],
+        "Left": 257.740058137827,
+        "Top": 100.86498694555499,
+        "Width": 310.99999999999994,
+        "Height": 231.876201443426,
+        "FontSize": 24.0,
+        "InitialTop": 168.864986945555,
+        "InitialHeight": 215.876201443426,
+        "TextblockHeight": 58.0,
+        "Background": "#FFB9F9E1"
+      },
+      {
+        "Id": "b2abdc296d044d7a86ae0654a5842542",
+        "Title": "Ejercicio 5 _ Obten el resultado de sumar el 2º bloque de codeblocks con el texto usando variables. ",
+        "Nodes": [
+          "3645dc837aae449182fa4ceebf4b9726",
+          "dbdc26d5cd524107891e571571391afa"
+        ],
+        "Left": 595.912744724172,
+        "Top": 101.376487617963,
+        "Width": 312.0,
+        "Height": 397.049735196767,
+        "FontSize": 24.0,
+        "InitialTop": 226.376487617963,
+        "InitialHeight": 314.049735196767,
+        "TextblockHeight": 115.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "8b81a6e92a7141f7a7bfe969616ae7d4",
+        "Title": "Ejercicio 4 _ Haz una curva por tres puntos y transfórmala en CodeBlocks",
+        "Nodes": [
+          "aecace88295e4901a41310c2c68720d9",
+          "de89853f5f094ecab04d63e7dbda782d",
+          "b8acf46fe45f4770a08b32f025cb2041",
+          "973c44489afe43d596acdd826371904d",
+          "8cc481b5ec00457e805b839dcf8e660f",
+          "109b92aa2e1d44c5a9e13db9ac3b3e01",
+          "cfc81089b8fd48b29880a046e9c83c8a",
+          "1a539bb8a7d740db8c19696ecf035f1f",
+          "98ff6e0c7abd4839bb8d6b765e1ebc4f",
+          "861d2504dd3a48ebbafd140436c95e25",
+          "33c9248501d74752b92cab2ff409f81a",
+          "d571061c23684a00a3f7ab7ed775cd2c"
+        ],
+        "Left": 942.40751181664,
+        "Top": 100.30907520148801,
+        "Width": 2123.85032100844,
+        "Height": 630.464843074402,
+        "FontSize": 30.0,
+        "InitialTop": 146.309075201488,
+        "InitialHeight": 591.008509185145,
+        "TextblockHeight": 36.0,
+        "Background": "#FFA4E1FF"
+      },
+      {
+        "Id": "e75960553096458f80085c19ac771f65",
+        "Title": "220_CodeBlocks_ER",
+        "Nodes": [
+          "bff82c96b779426e9ff23afc5239ea28",
+          "ec2fdd6471474b188fbc56176852ab22",
+          "6653144c477940a3b8f3dab29c3aa80d",
+          "94da2bc7f37342a58b46f4ddc68ce5ba"
+        ],
+        "Left": -454.325760703671,
+        "Top": -428.579101620898,
+        "Width": 273.511569212,
+        "Height": 254.31456056939896,
+        "FontSize": 30.0,
+        "InitialTop": -382.579101620898,
+        "InitialHeight": 289.31456056939896,
+        "TextblockHeight": 36.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "67a03730c85141d9a32da97227da14d2",
+        "Title": "",
+        "Nodes": [
+          "bc6fcd517dae489db6296dfa6f6d0a09"
+        ],
+        "Left": -146.824928481822,
+        "Top": -253.788432924193,
+        "Width": 154.0,
+        "Height": 90.0,
+        "FontSize": 30.0,
+        "InitialTop": -207.788432924193,
+        "InitialHeight": 140.0,
+        "TextblockHeight": 36.0,
+        "Background": "#FFB9F9E1"
+      },
+      {
+        "Id": "b291a81cb7164588adb7d1dba3b4049f",
+        "Title": "",
+        "Nodes": [
+          "189a1f64fce94c62b82f228a52681f38"
+        ],
+        "Left": -146.824928481822,
+        "Top": -440.628597836486,
+        "Width": 177.0,
+        "Height": 90.0,
+        "FontSize": 30.0,
+        "InitialTop": -394.628597836486,
+        "InitialHeight": 140.0,
+        "TextblockHeight": 36.0,
+        "Background": "#FFBB87C6"
+      },
+      {
+        "Id": "78b0c88bc90545139beb956bb299af0f",
+        "Title": "",
+        "Nodes": [
+          "f54b715696f940db9a4725ae607920d4"
+        ],
+        "Left": -146.824928481822,
+        "Top": -347.349339129737,
+        "Width": 175.0,
+        "Height": 90.0,
+        "FontSize": 30.0,
+        "InitialTop": -301.349339129737,
+        "InitialHeight": 140.0,
+        "TextblockHeight": 36.0,
+        "Background": "#FFFF7BAC"
+      },
+      {
+        "Id": "02f339bd22664a06b441dc107629004a",
+        "Title": "",
+        "Nodes": [
+          "e48da7a78bc54eea8b4c360975d63877"
+        ],
+        "Left": 33.5961594162516,
+        "Top": -348.247466167678,
+        "Width": 80.0,
+        "Height": 90.0,
+        "FontSize": 30.0,
+        "InitialTop": -302.247466167678,
+        "InitialHeight": 140.0,
+        "TextblockHeight": 36.0,
+        "Background": "#FF48B9FF"
+      },
+      {
+        "Id": "e47022bc11f74ed6a08c149452ee17c0",
+        "Title": "",
+        "Nodes": [
+          "a6fc268cc5504a4aae0300a817d14707"
+        ],
+        "Left": 16.1305417140018,
+        "Top": -254.593056977012,
+        "Width": 175.0,
+        "Height": 90.0,
+        "FontSize": 30.0,
+        "InitialTop": -208.593056977012,
+        "InitialHeight": 140.0,
+        "TextblockHeight": 36.0,
+        "Background": "#FFA4E1FF"
+      },
+      {
+        "Id": "5e8e33694e70497d9a8a2272a931c7ea",
+        "Title": "",
+        "Nodes": [
+          "926adb9e943447aa839149cac6940d15"
+        ],
+        "Left": 34.7974768865122,
+        "Top": -441.25694505825,
+        "Width": 204.0,
+        "Height": 90.0,
+        "FontSize": 30.0,
+        "InitialTop": -395.25694505825,
+        "InitialHeight": 140.0,
+        "TextblockHeight": 36.0,
+        "Background": "#FFFFAA45"
+      },
+      {
+        "Id": "3ae1f3d024eb4227829c4a56bf1bba85",
+        "Title": "",
+        "Nodes": [
+          "014ad00ea0b84ca29c1c6a43141d26e5"
+        ],
+        "Left": 120.16181134520201,
+        "Top": -346.931959829264,
+        "Width": 207.0,
+        "Height": 90.0,
+        "FontSize": 30.0,
+        "InitialTop": -300.931959829264,
+        "InitialHeight": 140.0,
+        "TextblockHeight": 36.0,
+        "Background": "#FFFFB8D8"
+      },
+      {
+        "Id": "df1be25657d64355bbb2b04158a277de",
+        "Title": "",
+        "Nodes": [
+          "aa041fc146a448b7b11c6ca6af518711"
+        ],
+        "Left": 240.253362414402,
+        "Top": -440.988483634982,
+        "Width": 195.0,
+        "Height": 90.0,
+        "FontSize": 30.0,
+        "InitialTop": -394.988483634982,
+        "InitialHeight": 140.0,
+        "TextblockHeight": 36.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "1a539bb8a7d740db8c19696ecf035f1f",
+        "Title": "1º _ Indicamos un valor para poder generar los tres puntos que necesitamos como input para el nodo Arc.ByThreePoints\r\nPodemos generar hasta 9 valores distintos, 3 inputs por cada punto.",
+        "Nodes": [],
+        "Left": 952.40751181664,
+        "Top": 454.951146021385,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "4f060845c6be4880a2b16ed24eec323c",
+        "Title": "En este caso, los valores entre los que buscará siguen siendo los mismos:\r\n1..84\r\nPara indicarle que, esta vez, lo que queremos es que tome los valores que resultan de dividir la lista en 7 fragmentos iguales, escibiremos al final:\r\n..#8",
+        "Nodes": [],
+        "Left": -72.1537456898216,
+        "Top": 195.029382800826,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "d1c61d8202bc4128be70d839ed0cf54d",
+        "Title": "Para incorporar un texto mediante Code Blocks hay que escribirlo entre comillas. ",
+        "Nodes": [],
+        "Left": 267.740058137827,
+        "Top": 168.864986945555,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "98ff6e0c7abd4839bb8d6b765e1ebc4f",
+        "Title": "2º _ Ahora generamos los tres puntos que necesitamos. \r\nÉste tomará como valor por defecto 0 si en alguno de sus inputs no indicamos un valor.",
+        "Nodes": [],
+        "Left": 1297.51273935189,
+        "Top": 146.309075201488,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "dbdc26d5cd524107891e571571391afa",
+        "Title": "Para este ejercicio hay que indicar al nodo Code Block que debe sumarnos dos variables. Para ello basta con escribir:\r\na+b\r\nAl salir del la edicion del nodo, automáticamente generará los dos inputs que precisa para realizarf la operación. Solo tenemos que indicarle de dónde debe tomar los valores de las variables a sumar. Y nos genera la lista de los valores ya unidos.",
+        "Nodes": [],
+        "Left": 605.912744724172,
+        "Top": 226.376487617963,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "0f046b2413294d24a6b3ab85eaccf500",
+        "Title": "Al escribir: \r\n1..84 \r\nle estamos indicando que queremos una lista de valores que se encontrarán entre esos dos números. Y para indicarle que los valores que queremos que genere sean de 7 en 7, le añadimos al final:\r\n..7",
+        "Nodes": [],
+        "Left": -420.706040268792,
+        "Top": 221.730633235919,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "861d2504dd3a48ebbafd140436c95e25",
+        "Title": "3º _ Este nodo permite crear, a partir de tres puntos, una curva.",
+        "Nodes": [],
+        "Left": 1740.37803993871,
+        "Top": 180.891600284948,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "33c9248501d74752b92cab2ff409f81a",
+        "Title": "4º _ Seleccionamos el nodo que queremos transformar a modo Code Block (que tenga el borde azul), y en cualquier punto del espacio de trabajo en blanco, click al botón derecho y seleccionamos la opción Nodo para Código.",
+        "Nodes": [],
+        "Left": 2150.90136157606,
+        "Top": 487.940385726436,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "d571061c23684a00a3f7ab7ed775cd2c",
+        "Title": "BONUS _ También podemos generar los tres puntos por coordenadas y el arco desde el mismo Code Block, de modo que queda más limpia la programación. ",
+        "Nodes": [],
+        "Left": 2661.71874678605,
+        "Top": 499.577941652607,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "ec2fdd6471474b188fbc56176852ab22",
+        "Title": "Bloque de DLAP: Iniciación",
+        "Nodes": [],
+        "Left": -444.325760703671,
+        "Top": -329.908689229794,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "6653144c477940a3b8f3dab29c3aa80d",
+        "Title": "Packages utilizados: ninguno",
+        "Nodes": [],
+        "Left": -443.814191491671,
+        "Top": -277.23827683869,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "bff82c96b779426e9ff23afc5239ea28",
+        "Title": "Dynamo generado por: Luisa Santamaría",
+        "Nodes": [],
+        "Left": -444.325760703671,
+        "Top": -382.579101620898,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "94da2bc7f37342a58b46f4ddc68ce5ba",
+        "Title": "Qué hace este dynamo: Resuelve el ejercicio propuesto 134_CodeBlocks",
+        "Nodes": [],
+        "Left": -443.814191491671,
+        "Top": -233.264541051499,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "bc6fcd517dae489db6296dfa6f6d0a09",
+        "Title": "Introducción de texto",
+        "Nodes": [],
+        "Left": -136.824928481822,
+        "Top": -207.788432924193,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "189a1f64fce94c62b82f228a52681f38",
+        "Title": "Seleccion Elementos Revit",
+        "Nodes": [],
+        "Left": -136.824928481822,
+        "Top": -394.628597836486,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "f54b715696f940db9a4725ae607920d4",
+        "Title": "Reestructuración de listas",
+        "Nodes": [],
+        "Left": -136.824928481822,
+        "Top": -301.349339129737,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "e48da7a78bc54eea8b4c360975d63877",
+        "Title": "Filtrado",
+        "Nodes": [],
+        "Left": 43.5961594162516,
+        "Top": -302.247466167678,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "a6fc268cc5504a4aae0300a817d14707",
+        "Title": "Generación de Geometría",
+        "Nodes": [],
+        "Left": 26.1305417140018,
+        "Top": -208.593056977012,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "926adb9e943447aa839149cac6940d15",
+        "Title": "Volcado de información a Revit",
+        "Nodes": [],
+        "Left": 44.7974768865122,
+        "Top": -395.25694505825,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "014ad00ea0b84ca29c1c6a43141d26e5",
+        "Title": "Generación de series de valores",
+        "Nodes": [],
+        "Left": 130.161811345202,
+        "Top": -300.931959829264,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "aa041fc146a448b7b11c6ca6af518711",
+        "Title": "Volcado de modelado a Revit",
+        "Nodes": [],
+        "Left": 250.253362414402,
+        "Top": -394.988483634982,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": -3111.2660094441339,
+    "Y": -422.3182307064618,
+    "Zoom": 1.4831575286822531
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "Uuid": "6ab698d5-673e-4c2d-aeda-9ca3eb201c83",
+  "IsCustomNode": false,
+  "Description": null,
+  "Name": "Reto_01_RocioSalazar",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "\"marca\"==\"EXTERIOR\";",
+      "Id": "500295aad5d047b29e50537f83ae0c36",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "aeed882bd881404b8e8de0e2c358cedc",
+          "Name": "",
+          "Description": "Valor de la expresión en la línea 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Permite creación directa de código de DesignScript"
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.ElementsOfCategory, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "Id": "271f939872a54cdda4a26999259beb12",
+      "Inputs": [
+        {
+          "Id": "899d51bdc2af4f9abcbeb6f933a4b52f",
+          "Name": "Category",
+          "Description": "La categoría",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "367d1a359be64b2d95af4185aec9cf1e",
+          "Name": "Elements",
+          "Description": "Un tipo de elemento",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Obtiene todos los elementos de la categoría especificada en el modelo"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "wall;",
+      "Id": "20a8599858994d7aa2e073bca1593292",
+      "Inputs": [
+        {
+          "Id": "444eba8cf5c64ce4b783f8eca3b91b1c",
+          "Name": "wall",
+          "Description": "wall",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "64787a957adc418b8ad8832b521875ac",
+          "Name": "",
+          "Description": "Valor de la expresión en la línea 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Permite creación directa de código de DesignScript"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "64787a957adc418b8ad8832b521875ac",
+      "End": "899d51bdc2af4f9abcbeb6f933a4b52f",
+      "Id": "654586b93c3d42cfb170442f820538ab"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.6.1.8786",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Vista preliminar en segundo plano",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "500295aad5d047b29e50537f83ae0c36",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 334.79133477596372,
+        "Y": 396.91702073191504
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "All Elements of Category",
+        "Id": "271f939872a54cdda4a26999259beb12",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 374.75858982716846,
+        "Y": 298.83681995707656
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "20a8599858994d7aa2e073bca1593292",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 188.17393582260286,
+        "Y": 302.73909626609583
+      }
+    ],
+    "Annotations": [],
+    "X": -233.69615152529923,
+    "Y": -203.92155403196955,
+    "Zoom": 1.5907768970610709
+  }
+}

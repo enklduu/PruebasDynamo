@@ -1,0 +1,790 @@
+{
+  "Uuid": "0dd74a73-fbde-4705-9a78-75bd74c645d7",
+  "IsCustomNode": false,
+  "Description": null,
+  "Name": "Seleccion_Elementos_Teoria",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Nodes.DSModelElementsSelection, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "InstanceId": [],
+      "Id": "34c9f22ca5e948619e53bb096fff7912",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "2e1457a035364fa88ffa0232fafd5ce5",
+          "Name": "Elements",
+          "Description": "Los elementos seleccionados",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled"
+    },
+    {
+      "ConcreteType": "Dynamo.Nodes.DSModelElementsSelection, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "InstanceId": [],
+      "Id": "83eb8d712dc14364952d4a33f3400899",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "78cb108f951f47ae9829b3888d81405c",
+          "Name": "Elements",
+          "Description": "Los elementos seleccionados",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled"
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.Categories, DSRevitNodesUI",
+      "SelectedIndex": 495,
+      "SelectedString": "OST_Walls",
+      "NodeType": "ExtensionNode",
+      "Id": "25f513022ebe43109cbf22a43d43552f",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "bc01b8b738624734827a93f2da9b24e2",
+          "Name": "Category",
+          "Description": "La categoría seleccionada",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Todas las categorías integradas"
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.ElementsAtLevel, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "Id": "137caec86e94410db37f7e13e13e52c1",
+      "Inputs": [
+        {
+          "Id": "db7531b739ad415192f6c0a8de65cc52",
+          "Name": "Level",
+          "Description": "Un nivel",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "2d8470a46fa6427883b9e4bd1627333a",
+          "Name": "Elements",
+          "Description": "Elementos del nivel en cuestión",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Obtiene todos los elementos en el nivel especificado del modelo"
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.ElementsOfCategory, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "Id": "990b7f7059e545aea0bbba8cc95fcef5",
+      "Inputs": [
+        {
+          "Id": "e8ac627163b94eca8c14be2ec0e34fac",
+          "Name": "Category",
+          "Description": "La categoría",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "3610f9d96eca4e30acb1602d7f54160b",
+          "Name": "Elements",
+          "Description": "Un tipo de elemento",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Obtiene todos los elementos de la categoría especificada en el modelo"
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.ElementsInView, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "Id": "bea49815178b46f9a51e2a5e2ec90d49",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "dc87e722452c4034be0f6fb100f0b120",
+          "Name": "elements",
+          "Description": "Todos los elementos visibles en la vista activa",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Obtiene todos los elementos que están visibles en la vista activa"
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.ElementsOfType, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "Id": "3c8640f3f3664f558fb7e64c69c3e614",
+      "Inputs": [
+        {
+          "Id": "52067bddad53424c8182b92d4ae1458e",
+          "Name": "element type",
+          "Description": "Un tipo de elemento",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "0023741514cf413796aa528496b6efed",
+          "Name": "elements",
+          "Description": "Todos los elementos del documento activo de un tipo determinado",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Todos los elementos del documento activo de una determinada clase."
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.Levels, DSRevitNodesUI",
+      "SelectedIndex": -1,
+      "SelectedString": "",
+      "NodeType": "ExtensionNode",
+      "Id": "07434ec2c3e045478355bb9a92ff8f44",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "ac6ea7cb623c46ea8b9d8a5a03d6be52",
+          "Name": "Levels",
+          "Description": "Levels seleccionado",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Selecciona un nivel en el documento activo"
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.ElementTypes, DSRevitNodesUI",
+      "SelectedIndex": 361,
+      "SelectedString": "Wall",
+      "NodeType": "ExtensionNode",
+      "Id": "7ba4f150325348f695df15aac3c12415",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "2b578a7cb6ef4f768cce6eb6bf76e67c",
+          "Name": "Types",
+          "Description": "Types seleccionado",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Todas las subclases de elemento."
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.ElementsOfFamilyType, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "Id": "c04391d0aaf541e0b749b06ba3db9412",
+      "Inputs": [
+        {
+          "Id": "21d2253f432e4b6e83e853a6a02e4264",
+          "Name": "Family Type",
+          "Description": "El tipo de familia",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "525e2c4f1f9c4e1da018a10a93690269",
+          "Name": "Elements",
+          "Description": "La lista de elementos que coinciden con la consulta",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Obtiene del modelo todos los elementos del tipo de familia especificado"
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.FamilyTypes, DSRevitNodesUI",
+      "SelectedIndex": -1,
+      "SelectedString": "",
+      "NodeType": "ExtensionNode",
+      "Id": "813f43d2605f4cbc80f763462b27b952",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "2e66f600aa8b40d792ec85f06cba8cc3",
+          "Name": "Family Type",
+          "Description": "Family Type seleccionado",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Todos los tipos de familia disponibles en el documento"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Revit.Elements.Element.Geometry",
+      "Id": "f8147e034df8462bae17878b1557e6b9",
+      "Inputs": [
+        {
+          "Id": "50e29ccacccc404caa98836cc0d47cbf",
+          "Name": "element",
+          "Description": "Revit.Elements.Element",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "cb6ee9339249492e968a06c895f1d588",
+          "Name": "var[]",
+          "Description": "var[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Obtiene toda la Geometry asociada con este objeto.\n\nElement.Geometry ( ): var[]"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "bc01b8b738624734827a93f2da9b24e2",
+      "End": "e8ac627163b94eca8c14be2ec0e34fac",
+      "Id": "16d230d4f342440b821f6f9f1bc18000",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "ac6ea7cb623c46ea8b9d8a5a03d6be52",
+      "End": "db7531b739ad415192f6c0a8de65cc52",
+      "Id": "5f36d83fd012497b96d2af8cb134a422",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "2b578a7cb6ef4f768cce6eb6bf76e67c",
+      "End": "52067bddad53424c8182b92d4ae1458e",
+      "Id": "385c50b2bb204f61bff7b43266c7f7ba",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "2e66f600aa8b40d792ec85f06cba8cc3",
+      "End": "21d2253f432e4b6e83e853a6a02e4264",
+      "Id": "c445e49834ab43b7b54cc766743680cb",
+      "IsHidden": "False"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [],
+  "Thumbnail": null,
+  "GraphDocumentationURL": null,
+  "ExtensionWorkspaceData": [
+    {
+      "ExtensionGuid": "28992e1d-abb9-417f-8b1b-05e053bee670",
+      "Name": "Properties",
+      "Version": "2.13",
+      "Data": {}
+    },
+    {
+      "ExtensionGuid": "DFBD9CC0-DB40-457A-939E-8C8555555A9D",
+      "Name": "Generative Design",
+      "Version": "2.0",
+      "Data": {}
+    }
+  ],
+  "Author": "None provided",
+  "Linting": {
+    "activeLinter": "Ninguno",
+    "activeLinterId": "7b75fb44-43fd-4631-a878-29f4d5d8399a",
+    "warningCount": 0,
+    "errorCount": 0
+  },
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": false,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.13.1.3887",
+      "RunType": "Automatic",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Vista preliminar en segundo plano",
+      "EyeX": -71.206535285755379,
+      "EyeY": 51.660476368523966,
+      "EyeZ": 72.5514163749495,
+      "LookX": 19.565015281915244,
+      "LookY": -21.195433222074833,
+      "LookZ": -94.5642405292569,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "ConnectorPins": [],
+    "NodeViews": [
+      {
+        "Name": "Select Model Elements",
+        "ShowGeometry": true,
+        "Id": "34c9f22ca5e948619e53bb096fff7912",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 384.0,
+        "Y": 473.0
+      },
+      {
+        "Name": "Select Model Elements",
+        "ShowGeometry": true,
+        "Id": "83eb8d712dc14364952d4a33f3400899",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 380.37931805163078,
+        "Y": 249.72431518750631
+      },
+      {
+        "Name": "Categories",
+        "ShowGeometry": true,
+        "Id": "25f513022ebe43109cbf22a43d43552f",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 407.00858022893874,
+        "Y": 664.05602477059676
+      },
+      {
+        "Name": "All Elements at Level",
+        "ShowGeometry": true,
+        "Id": "137caec86e94410db37f7e13e13e52c1",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 635.77277314555977,
+        "Y": 897.86683486636127
+      },
+      {
+        "Name": "All Elements of Category",
+        "ShowGeometry": true,
+        "Id": "990b7f7059e545aea0bbba8cc95fcef5",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 618.37931805163055,
+        "Y": 664.58187720605849
+      },
+      {
+        "Name": "All Elements In Active View",
+        "ShowGeometry": true,
+        "Id": "bea49815178b46f9a51e2a5e2ec90d49",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 382.31366156635886,
+        "Y": 1392.8370340549657
+      },
+      {
+        "Name": "All Elements of Type",
+        "ShowGeometry": true,
+        "Id": "3c8640f3f3664f558fb7e64c69c3e614",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 645.942657319573,
+        "Y": 1265.203319701799
+      },
+      {
+        "Name": "Levels",
+        "ShowGeometry": true,
+        "Id": "07434ec2c3e045478355bb9a92ff8f44",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 424.99495922594173,
+        "Y": 898.18847732627853
+      },
+      {
+        "Name": "Element Types",
+        "ShowGeometry": true,
+        "Id": "7ba4f150325348f695df15aac3c12415",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 436.11339945038412,
+        "Y": 1263.9509822386517
+      },
+      {
+        "Name": "All Elements of Family Type",
+        "ShowGeometry": true,
+        "Id": "c04391d0aaf541e0b749b06ba3db9412",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 637.59435254132563,
+        "Y": 1073.2470192867197
+      },
+      {
+        "Name": "Family Types",
+        "ShowGeometry": true,
+        "Id": "813f43d2605f4cbc80f763462b27b952",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 361.35504617820015,
+        "Y": 1079.3277587349644
+      },
+      {
+        "Name": "Element.Geometry",
+        "ShowGeometry": true,
+        "Id": "f8147e034df8462bae17878b1557e6b9",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1009.8871937729684,
+        "Y": 942.5209947516413
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "d17d03ddb0ab4515ad7e93a2a5ef86ea",
+        "Title": "SELECCIÓN 1 ELEMENTO",
+        "DescriptionText": null,
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "83eb8d712dc14364952d4a33f3400899",
+          "fe9b386457024e87866acf5285fb8c17"
+        ],
+        "HasNestedGroups": false,
+        "Left": 72.379318051630776,
+        "Top": 177.3243151875063,
+        "Width": 566.0,
+        "Height": 223.4,
+        "FontSize": 36.0,
+        "InitialTop": 249.72431518750631,
+        "InitialHeight": 155.0,
+        "TextblockHeight": 62.4,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "136fb4d2b5344c92b586bd7c4e82cf8f",
+        "Title": "SELECCIÓN VARIOS ELEMENTOS",
+        "DescriptionText": null,
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "34c9f22ca5e948619e53bb096fff7912",
+          "d5e42e981a0f456d835176a234dd96be"
+        ],
+        "HasNestedGroups": false,
+        "Left": 72.0,
+        "Top": 400.6,
+        "Width": 570.0,
+        "Height": 223.39999999999998,
+        "FontSize": 36.0,
+        "InitialTop": 473.0,
+        "InitialHeight": 157.0,
+        "TextblockHeight": 62.4,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "8a2c4b52d03f4f49a0258eaec0585120",
+        "Title": "SELECCIÓN POR CATEGORÍA",
+        "DescriptionText": null,
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "25f513022ebe43109cbf22a43d43552f",
+          "990b7f7059e545aea0bbba8cc95fcef5",
+          "ccebb5f3232047e99a8a8a2844526020"
+        ],
+        "HasNestedGroups": false,
+        "Left": 67.895883655891907,
+        "Top": 591.65602477059679,
+        "Width": 817.28343439573871,
+        "Height": 230.40973700012614,
+        "FontSize": 36.0,
+        "InitialTop": 664.05602477059676,
+        "InitialHeight": 152.80973700012612,
+        "TextblockHeight": 62.4,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "39be9a3e673548f3ad83d3c04dc3c40d",
+        "Title": "SELECCIÓN POR NIVEL",
+        "DescriptionText": null,
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "137caec86e94410db37f7e13e13e52c1",
+          "07434ec2c3e045478355bb9a92ff8f44",
+          "1e033427b905408eb82bf8fe817b46c7"
+        ],
+        "HasNestedGroups": false,
+        "Left": 66.975148993416951,
+        "Top": 825.4668348663613,
+        "Width": 807.59762415214277,
+        "Height": 204.52164245991719,
+        "FontSize": 36.0,
+        "InitialTop": 897.86683486636127,
+        "InitialHeight": 155.63350190929123,
+        "TextblockHeight": 62.4,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "51c9cce10bb04579b0d58f2a2cc215db",
+        "Title": "SELECCIÓN SEGÚN FAMILIA",
+        "DescriptionText": null,
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "c04391d0aaf541e0b749b06ba3db9412",
+          "813f43d2605f4cbc80f763462b27b952",
+          "217d5b2d4e9248b4b4850ff3e8b77fc5"
+        ],
+        "HasNestedGroups": false,
+        "Left": 59.4795526624456,
+        "Top": 1000.8470192867197,
+        "Width": 867.31479987888008,
+        "Height": 210.28073944824462,
+        "FontSize": 36.0,
+        "InitialTop": 1073.2470192867197,
+        "InitialHeight": 158.030155960525,
+        "TextblockHeight": 62.4,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "8ac293034ffa49fbbe0edba61ae1e2a0",
+        "Title": "SELECCIÓN SEGÚN ELEMENTOS",
+        "DescriptionText": null,
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "3c8640f3f3664f558fb7e64c69c3e614",
+          "7ba4f150325348f695df15aac3c12415",
+          "09e79a92f7734fa59f0d1aa327cd70df"
+        ],
+        "HasNestedGroups": false,
+        "Left": 56.5832280967478,
+        "Top": 1191.5509822386516,
+        "Width": 824.95942922282518,
+        "Height": 205.45233746314739,
+        "FontSize": 36.0,
+        "InitialTop": 1263.9509822386517,
+        "InitialHeight": 154.02090128391478,
+        "TextblockHeight": 62.4,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "fe9b386457024e87866acf5285fb8c17",
+        "Title": "Podemos seleccionar un elemento en Revit, de uno en uno. ",
+        "DescriptionText": null,
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [],
+        "HasNestedGroups": false,
+        "Left": 82.379318051630776,
+        "Top": 259.72431518750631,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "d5e42e981a0f456d835176a234dd96be",
+        "Title": "Podemos seleccionar varios elementos en Revit, mediante una caja de selección (pulsando y arrastrando)",
+        "DescriptionText": null,
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [],
+        "HasNestedGroups": false,
+        "Left": 82.0,
+        "Top": 485.0,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "ccebb5f3232047e99a8a8a2844526020",
+        "Title": "Con este nodo podemos seleccionar por categorías, pero tenemos que tener en cuenta que una categoria alberga subcategorías, por ejemplo: muros (tienes muros, líneas de muro, materiales, líneas discontinuas, etc.). Por lo tanto, para seleccionar una categoría debemos filtrar y este nodo se usa en concordancia con \"All Elements of Category\".",
+        "DescriptionText": null,
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [],
+        "HasNestedGroups": false,
+        "Left": 77.895883655891907,
+        "Top": 671.86576177072288,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "1e033427b905408eb82bf8fe817b46c7",
+        "Title": "Selecciono todos los elementos que están en el nivel seleccionado.",
+        "DescriptionText": null,
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [],
+        "HasNestedGroups": false,
+        "Left": 76.975148993416951,
+        "Top": 908.5003367756525,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "217d5b2d4e9248b4b4850ff3e8b77fc5",
+        "Title": "Seleccionar todos los elementos de un tipo de familia.",
+        "DescriptionText": null,
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [],
+        "HasNestedGroups": false,
+        "Left": 69.4795526624456,
+        "Top": 1086.2771752472447,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "09e79a92f7734fa59f0d1aa327cd70df",
+        "Title": "Seleccionamos todos los elementos de un mismo tipo",
+        "DescriptionText": null,
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [],
+        "HasNestedGroups": false,
+        "Left": 66.5832280967478,
+        "Top": 1272.9718835225665,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "fd8caec84cb845d8b597f0782c5db487",
+        "Title": "No es muy recomendado, ya que necesitamos disponer de una vista activa ya preparada.",
+        "DescriptionText": null,
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [],
+        "HasNestedGroups": false,
+        "Left": 53.006293315970879,
+        "Top": 1409.3911550607158,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "356d67f38fe04f629dc125cbb967a982",
+        "Title": "Este nodo lo necesito para visualizar lo seleccionado en dynamo",
+        "DescriptionText": null,
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [],
+        "HasNestedGroups": false,
+        "Left": 966.69932176838438,
+        "Top": 869.688794157543,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": 131.24598779613024,
+    "Y": -262.761993647919,
+    "Zoom": 0.51598827783907508
+  }
+}
