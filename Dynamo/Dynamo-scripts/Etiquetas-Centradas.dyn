@@ -1,0 +1,222 @@
+{
+  "Uuid": "193a082e-6c17-4706-86c6-0517f6da89d5",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "Etiquetas-Centradas",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "DSRevitNodesUI.Categories, DSRevitNodesUI",
+      "SelectedIndex": 412,
+      "SelectedString": "OST_Rooms",
+      "NodeType": "ExtensionNode",
+      "Id": "4f2be5f4932e4b5999de73699b8fe28e",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "ee6025d2152c45e9a190026c4b41ea93",
+          "Name": "Category",
+          "Description": "La categoría seleccionada",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Todas las categorías integradas"
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.ElementsOfCategory, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "Id": "2617842bd823498a98e21f73e1fbf218",
+      "Inputs": [
+        {
+          "Id": "fe8856375ba34ec497d3c4755938a184",
+          "Name": "Category",
+          "Description": "La categoría",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "4bca8b0e370c4b6288220ff13f296d0e",
+          "Name": "Elements",
+          "Description": "Una clase de elemento.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Obtiene todos los elementos de la categoría especificada en el modelo"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "b0e36d72-d17b-4ad8-8ea7-c8f119aba37e",
+      "FunctionType": "Graph",
+      "NodeType": "FunctionNode",
+      "Id": "c3a07325b89f4e039f655546128ebcab",
+      "Inputs": [
+        {
+          "Id": "3da7cc7059e84ec4b796c9d6943a2cc0",
+          "Name": "_rooms",
+          "Description": "Room(s) to move location and tags.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "976a9ffb03d048a7b3fc66168a15ce0f",
+          "Name": "_centeredRooms",
+          "Description": "Moved to geometrical center.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "6b9fb5a7c95d403ebe4f12edb11640cd",
+          "Name": "_movedRooms",
+          "Description": "Moved to closest possible point to geometrical center.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "1d4fbe48e01147be91f983fcff960842",
+          "Name": "_errorRooms",
+          "Description": "Could not be moved",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "This node moves the room location of the selected rooms to the closest possible point to geometrical center. Also modifies the associated room tags in all model."
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "ee6025d2152c45e9a190026c4b41ea93",
+      "End": "fe8856375ba34ec497d3c4755938a184",
+      "Id": "7427ce6ff98040faa52620355cbd17cc",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "4bca8b0e370c4b6288220ff13f296d0e",
+      "End": "3da7cc7059e84ec4b796c9d6943a2cc0",
+      "Id": "a90798b88ed544fa989ecae39064b143",
+      "IsHidden": "False"
+    }
+  ],
+  "Dependencies": [
+    "b0e36d72-d17b-4ad8-8ea7-c8f119aba37e"
+  ],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Modelical",
+      "Version": "2022.6.15",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "c3a07325b89f4e039f655546128ebcab"
+      ]
+    }
+  ],
+  "Thumbnail": "",
+  "GraphDocumentationURL": null,
+  "ExtensionWorkspaceData": [
+    {
+      "ExtensionGuid": "28992e1d-abb9-417f-8b1b-05e053bee670",
+      "Name": "Properties",
+      "Version": "2.13",
+      "Data": {}
+    },
+    {
+      "ExtensionGuid": "DFBD9CC0-DB40-457A-939E-8C8555555A9D",
+      "Name": "Generative Design",
+      "Version": "2.0",
+      "Data": {}
+    }
+  ],
+  "Author": "",
+  "Linting": {
+    "activeLinter": "Ninguno",
+    "activeLinterId": "7b75fb44-43fd-4631-a878-29f4d5d8399a",
+    "warningCount": 0,
+    "errorCount": 0
+  },
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.13.1.3887",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Vista preliminar en segundo plano",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "ConnectorPins": [],
+    "NodeViews": [
+      {
+        "Name": "Categories",
+        "ShowGeometry": true,
+        "Id": "4f2be5f4932e4b5999de73699b8fe28e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 181.33707831214986,
+        "Y": 139.51840431491709
+      },
+      {
+        "Name": "All Elements of Category",
+        "ShowGeometry": true,
+        "Id": "2617842bd823498a98e21f73e1fbf218",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 461.02665242264766,
+        "Y": 139.37116979558058
+      },
+      {
+        "Name": "Room.CenterLocationAndTags",
+        "ShowGeometry": true,
+        "Id": "c3a07325b89f4e039f655546128ebcab",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 785.36820754805717,
+        "Y": 117.84214977885301
+      }
+    ],
+    "Annotations": [],
+    "X": 272.157907389487,
+    "Y": 118.10645063267668,
+    "Zoom": 1.1113575327695027
+  }
+}
